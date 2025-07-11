@@ -1,0 +1,157 @@
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .header {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tableContainer {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .farmerTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .farmerTable th {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 2px solid #eee;
+    font-size: 15px;
+  }
+  
+  .farmerTable td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 15px;
+  }
+  
+  .farmerName {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 14px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .status.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .status.approved {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status.rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .approveButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .approveButton:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+  }
+  
+  .rejectButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .rejectButton:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+  }
+  
+  .notification {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 18px 28px;
+    border-radius: 6px;
+    color: white;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+    font-size: 16px;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .notification.success {
+    background-color: #28a745;
+  }
+  
+  .notification.error {
+    background-color: #dc3545;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+    
+    .farmerTable th,
+    .farmerTable td {
+      padding: 12px 15px;
+    }
+  }

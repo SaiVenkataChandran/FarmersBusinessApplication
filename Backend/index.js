@@ -1,0 +1,85 @@
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const dotEnv = require("dotenv");
+const GetTxnRouter = require("./Routes/AdminRoutes/getTxnRoutes.js");
+const getConsOrderRouter = require("./Routes/Consumer/consumerOrderRoutes.js");
+const AdminProductsrouter = require("./Routes/AdminRoutes/GetordersRoutes.js");
+const Verifypaymentrouter = require("./Routes/VerifyPaymentRoutes.js");
+const FetchPendingFarmers = require("./Routes/AdminRoutes/FetchFarmersPending.js");
+const NotificationsRouter = require("./Routes/Farmer/farmerNotficationsRoutes.js");
+const deleteProductRoute = require("./Routes/Farmer/deleteproductRoutes.js");
+const ValidateOtp = require("./Routes/ValidateOtpRoutes.js");
+const farmerRouter = require("./Routes/Farmer/FarmerRoutes.js");
+const router = require("./Routes/otprequestRoutes.js");
+const PaymentRoute = require("./Routes/PaymentRoutes.js");
+const consumerRouter = require("./Routes/consumerRoutes.js");
+const SearchRouter = require("./Routes/loginRoutes.js");
+const emailCheckRouter = require("./Routes/emailCheckRouter.js");
+const otpRouter = require("./Routes/SendOtpRouter.js");
+const ResetPassRouter = require("./Routes/RestPasswordRouter.js");
+const RegistrationRouter = require("./Routes/AdminRoutes/RegistrationsRoutes.js");
+const Profilerouter = require("./Routes/ProfileRoutes.js");
+const addProductRouter = require("./Routes/Farmer/addProduct.js");
+const ViewProductsRouter = require("./Routes/Farmer/ViewProductsRoutes.js");
+const OrderRouter = require("./Routes/Farmer/OrderRoutes.js");
+const FarmerDashboardRouter = require("./Routes/Farmer/FarmerDashboardRoutes.js");
+const verificationroutes = require("./Routes/AdminRoutes/VerificationRoute.js");
+const PendingProductrouter = require("./Routes/AdminRoutes/PendingProductsRoutes.js");
+const UpdateProductsRouter = require("./Routes/AdminRoutes/UpdateProductsRoutes.js");
+const consumerProductRoutes = require("./Routes/Consumer/productsRoutes");
+const Addcartrouter = require("./Routes/Consumer/AddtoCartRoutes.js");
+const AddtoordersRouter = require("./Routes/AddtoOrders.js");
+const productRoutes = require("./Routes/Farmer/ProductRoutes");
+const UpdateOrderStatusRoutes = require("./Routes/AdminRoutes/UpdateOrderstatusRoutes.js");
+const getPaymentsRouter = require("./Routes/AdminRoutes/TransactionRoutes.js");
+dotEnv.config();
+const app = express();
+const PORT = process.env.PORT || 5000;
+const port = 5000;
+mongoose
+  .connect(process.env.MONGO_URL)
+  .then(() => {
+    console.log(`Connected`);
+  })
+  .catch((err) => {
+    console.log("server:", err);
+  });
+
+app.use(cors());
+app.use(express.json());
+app.use("/api", GetTxnRouter);
+app.use("/api", getPaymentsRouter);
+app.use("/api", UpdateOrderStatusRoutes);
+app.use("/api", AdminProductsrouter);
+app.use("/api", AddtoordersRouter);
+app.use("/api", Verifypaymentrouter);
+app.use("/api", PaymentRoute);
+app.use("/api", PaymentRoute);
+app.use("/api", deleteProductRoute);
+app.use("/api", Profilerouter);
+app.use("/api", consumerRouter);
+app.use("/api", router);
+app.use("/api", farmerRouter);
+app.use("/api", SearchRouter);
+app.use("/api", Addcartrouter);
+app.use("/api", emailCheckRouter);
+app.use("/api", otpRouter);
+app.use("/api/farmers_fetching", FetchPendingFarmers);
+app.use("/api/products", PendingProductrouter);
+app.use("/api", ValidateOtp);
+app.use("/api", ResetPassRouter);
+app.use("/api", RegistrationRouter);
+app.use("/api", addProductRouter);
+app.use("/api", UpdateProductsRouter);
+app.use("/api", ViewProductsRouter);
+app.use("/api/notifications", NotificationsRouter);
+app.use("/api", OrderRouter);
+app.use("/api", getConsOrderRouter);
+app.use("/api", FarmerDashboardRouter);
+app.use("/api", verificationroutes);
+app.use("/api/consumer", consumerProductRoutes);
+app.use("/api", productRoutes);
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});

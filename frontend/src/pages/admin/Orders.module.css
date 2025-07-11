@@ -1,0 +1,217 @@
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .filterSection {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .filterSection label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .filterSelect {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: white;
+  }
+  
+  .ordersGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* left panel (order list), right panel (order details) */
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  
+  .ordersList {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow-x: auto; /* optional, just in case */
+  }
+  
+  
+  .ordersTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ordersTable th {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .ordersTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+  }
+  
+  .orderRow {
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .orderRow:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .orderRow.selected {
+    background-color: #e9f5ff;
+  }
+  
+  .statusBadge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .statusBadge.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .statusBadge.shipped {
+    background-color: #cce5ff;
+    color: #004085;
+  }
+  
+  .statusBadge.delivered {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .statusBadge.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+ .orderDetails {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+  
+  .orderDetails h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .detailSection {
+    margin-bottom: 20px;
+  }
+  
+  .detailSection h3 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .statusSelect {
+    padding: 6px 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+  }
+  
+  .itemsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .itemsTable th {
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 500;
+    color: #555;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .itemsTable td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+  }
+  
+  .totalAmount {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  /* Add these to your existing CSS */
+  /* Add these to your existing CSS */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .notification.success {
+    background-color: #28a745;
+  }
+  
+  .notification.error {
+    background-color: #dc3545;
+  }
+  
+  .trackingInfo {
+    background-color: #e7f5ff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+    display: inline-block;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

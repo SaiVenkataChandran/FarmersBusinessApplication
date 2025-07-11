@@ -1,0 +1,81 @@
+.app-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/farm-login-bg.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  .farmer-logins-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .farmer-logins-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #43a047;
+  }
+  
+  .farmer-logins-container form {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  
+  .farmer-logins-container input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+  }
+  
+  .farmer-logins-container button {
+    padding: 12px;
+    margin-top: 16px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .farmer-logins-container button:hover {
+    background-color: #43a047;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  

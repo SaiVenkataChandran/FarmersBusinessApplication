@@ -1,0 +1,124 @@
+/* Full screen container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/farm-login-bg.jpg') center center no-repeat;
+  opacity: 0.8;
+  background-size: cover;
+  padding: 20px;
+}
+
+/* White login/reset box */
+.farmer-logins-container {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.farmer-logins-container h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2e7d32;
+}
+
+/* Input styles */
+.login-form input,
+.reset-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Button styles */
+.login-form button,
+.reset-button,
+.toggle-button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 14px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover,
+.reset-button:hover,
+.toggle-button:hover {
+  background-color: #388e3c;
+}
+
+/* Forgot Password link */
+.forgot-password button {
+  background: none;
+  border: none;
+  color: #388e3c;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.forgot-password button:hover {
+  background-color: #e8f5e9;
+  border-radius: 4px;
+}
+
+/* Back and Register links */
+.back-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-size:20px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #333;
+}
+
+.reg-button {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.reg-button:hover {
+  text-decoration: underline;
+}
+
+/* Messages */
+.error-message {
+  color: red;
+  font-size:20px;
+  margin-top: 12px;
+}
+
+.success-message {
+  color: green;
+  font-size: 20px;
+  margin-top: 12px;
+}

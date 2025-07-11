@@ -1,0 +1,23 @@
+.unauthorized-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #f9f9f9;
+    color: #299a2e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .unauthorized-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .unauthorized-container p {
+    font-size: 1.2rem;
+    max-width: 500px;
+  }
+  

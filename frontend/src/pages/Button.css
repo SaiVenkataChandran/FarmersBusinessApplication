@@ -1,0 +1,42 @@
+/* Base button styles */
+.btn {
+    padding: 12px 25px; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+    text-transform: uppercase; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    outline: none; 
+  }
+  
+  /* Farmer Button (Green) */
+  .btn-farmer {
+    background: linear-gradient(145deg, #4CAF50, #388E3C); /* Gradient for a modern look */
+    color: white;
+    box-shadow: 0 6px 15px rgba(72, 189, 63, 0.3); 
+    text-align: center;/* More pronounced shadow */
+  }
+  
+  /* Hover state for Farmer Button */
+  .btn-farmer:hover {
+    background: #388E3C;
+    transform: translateY(-4px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(72, 189, 63, 0.4); /* Larger shadow on hover */
+  }
+  
+  /* Consumer Button (Blue) */
+  .btn-consumer {
+    background: linear-gradient(145deg, #2196F3, #1976D2); /* Gradient for a modern look */
+    color: white;
+    box-shadow: 0 6px 15px rgba(33, 150, 243, 0.3); /* More pronounced shadow */
+  }
+  
+  /* Hover state for Consumer Button */
+  .btn-consumer:hover {
+    background: #1976D2;
+    transform: translateY(-4px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(33, 150, 243, 0.4); /* Larger shadow on hover */
+  }

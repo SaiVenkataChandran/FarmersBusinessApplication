@@ -1,0 +1,100 @@
+.container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.filterBar {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchBox {
+  padding: 0.5rem;
+  border-radius: 6px;    
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.table {
+  margin-top: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.tableHeader,
+.tableRow {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tableHeader > span,
+.tableRow > span,
+.tableRow .productDetails {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.tableHeader > :first-child,
+.tableRow .productDetails {
+  flex: 1.2;
+}
+
+.productDetails {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.productDetails img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.model {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: flex-start; /* or center */
+  gap: 0.4rem;
+}
+.approve {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reject {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noData {
+  padding: 1rem;
+  text-align: center;
+  color: gray;
+}

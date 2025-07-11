@@ -1,0 +1,80 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile-background {
+  background: url('/farm-login-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.text strong {
+  color: #0d992d;
+}
+
+.btn1 {
+  padding: 10px 20px;
+  border: none;
+  background-color: #085a05;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn1:hover {
+  background-color: #1d550f;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons span {
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icons span:hover {
+  color: #1a5c06;
+}
+
+.date {
+  margin-top: 20px;
+}
+
+.join {
+  font-size: 14px;
+  color: #666;
+}
+
+.text-center {
+  font-size: 18px;
+  color: #007bff;
+}

@@ -1,0 +1,88 @@
+.productsContainer {
+  padding: 20px 5px;
+  font-family: Arial, sans-serif;
+  background: url('/farm-login-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  align-items:flex-start;
+  min-height: 100vh;
+}
+
+.addProductBtn {
+  background-color: #2a774d;
+  color: white;
+  padding: 12px 12px; /* Reduced padding */
+  font-size: 14px;   /* Smaller text */
+  border: none;
+  border-radius: 6px;
+  margin: 50px auto;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content; /* Keeps it compact */
+}
+
+
+.productsGrid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.productCard {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.stockStatus {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.productActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.editBtn {
+  background-color: #2a774d;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #e74c3c;
+  color: white;
+}

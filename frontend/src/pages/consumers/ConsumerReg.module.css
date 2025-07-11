@@ -1,0 +1,96 @@
+/* .container equivalent for ConsumerReg */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/farm-login-bg.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/* Main container for ConsumerReg form */
+.consumer-reg-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading styling */
+.consumer-reg-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #43a047;
+}
+
+/* Form styling */
+.consumer-reg-container form {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+/* Input fields styling */
+.consumer-reg-container input {
+    padding: 10px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+/* Button styling */
+.consumer-reg-container button {
+    padding: 12px;
+    margin-top: 16px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.consumer-reg-container button:hover {
+    background-color: #43a047;
+}
+
+/* Success message styling */
+.success-message {
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* OTP Timer message styling */
+.timer {
+    font-size: 16px;
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+
+/* Link for login */
+.login-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

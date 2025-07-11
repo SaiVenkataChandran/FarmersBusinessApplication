@@ -1,0 +1,82 @@
+.orderPage-container {
+    padding: 5rem;
+  }
+  .orderPage-background{
+    background: url('/farm-login-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .orderPage-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .orderPage-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .orderPage-table th,
+  .orderPage-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  .orderPage-status {
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .pending {
+    background-color: orange;
+  }
+  
+  .accepted {
+    background-color: #28a745;
+  }
+  
+  .shipped {
+    background-color: #007bff;
+  }
+  
+  .delivered {
+    background-color: #6c757d;
+  }
+  
+  .rejected {
+    background-color: #dc3545;
+  }
+  
+  .accept-button,
+  .reject-button,
+  .ship-button,
+  .deliver-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin: 0 3px;
+  }
+  
+  .accept-button {
+    background-color: #28a745;
+  }
+  
+  .reject-button {
+    background-color: #dc3545;
+  }
+  
+  .ship-button {
+    background-color: #007bff;
+  }
+  
+  .deliver-button {
+    background-color: #6c757d;
+  }

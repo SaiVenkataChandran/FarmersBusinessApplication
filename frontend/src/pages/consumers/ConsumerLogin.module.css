@@ -1,0 +1,135 @@
+/* Full screen container */
+.appContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/farm-login-bg.jpg') center center no-repeat;
+  opacity: 0.8;
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Login/reset card */
+.consumerLoginPage {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Title */
+.loginPage h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #43a047 !important;
+
+}
+.consumerLoginPage h1 {
+  color: #43a047;
+}
+
+/* Input fields */
+.loginForm input,
+.resetInput {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Buttons */
+.loginForm button,
+.resetButton,
+.toggleButton {
+  width: 100%;
+  padding: 14px;
+  margin-top: 14px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.loginForm button:hover,
+.resetButton:hover,
+.toggleButton:hover {
+  background-color: #388e3c;
+}
+
+/* Forgot password */
+.forgotPassword button {
+  background: none;
+  border: none;
+  color: #388e3c;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.forgotPassword button:hover {
+  background-color: #e8f5e9;
+  border-radius: 4px;
+}
+
+/* Navigation links */
+.backLink {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.registerLink {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #333;
+}
+
+.regButton {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.regButton:hover {
+  text-decoration: underline;
+}
+
+/* OTP timer and messages */
+.timerText {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.errorText {
+  color: red;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.successMessage {
+  color: green;
+  font-size: 20px;
+  margin-top: 12px;
+}
